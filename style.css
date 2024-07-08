@@ -1,0 +1,337 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: linear-gradient(75deg,blue,violet);
+    text-align: center;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+li,h1,ul,h2{
+    display: inline;
+}
+ul{
+    margin-left: 42%;
+}
+.one{
+    margin-left: 15%;
+    border-color:white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+.one a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+li{
+    color: grey;
+    margin: 5px;
+}
+li:hover{
+    color: white;
+    cursor: pointer;
+}
+.one:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.page a{
+    text-decoration: none;
+    color: grey;
+}
+.page a:hover{
+    cursor: pointer;
+    color: white;
+}
+.two{
+    margin: 20px;
+    text-align: center;
+    position: relative;
+}
+.line:before{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 560px;
+    background: black;
+    left: 0%;
+    top: 50%;
+    position: absolute;
+}
+.line:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 560px;
+    background: black;
+    right: 0%;
+    top: 50%;
+    position: absolute;
+}
+.image img{
+    height: 220px;
+    width: 220px;
+}
+.image{
+    display: inline-block;
+    border-color:black;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 5px;
+}
+.service{
+    text-align: center;
+    margin: 10px;
+   
+}
+.product{
+    margin: 20px;
+    position: relative;
+}
+.line1:before{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 560px;
+    top: 5%;
+    left: 0;
+    background: black;
+}
+.line1:after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 560px;
+    top: 5%;
+    right: 0;
+    background: black;
+}
+.items img{
+    height: 220px;
+    width: 220px;
+}
+.image a{
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+}
+.image a:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+.product{
+    text-align: center;
+}
+
+.items{
+    display: inline-block;
+    border-color:black;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    margin: 20px;
+}
+.brand{
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+.handling:before{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 537px;
+    top: 50%;
+    left: 0;
+    background: black;
+}
+.handling:after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 537px;
+    top: 50%;
+    right: 0;
+    background: black;
+}
+.us{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 220px;
+}
+.final{
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 290px;
+}
+.marquee img{
+    height: 140px;
+}
+iframe{
+    margin-left: 252px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    height: 500px;
+    width: 100%;
+}
+.manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manuals{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manuals:not(:last-child){
+    margin-right: 20px;
+}
+.manuals:hover{
+    background: red;
+}
+#radio1:checked~.first{
+    margin-left: 0;
+}
+#radio2:checked~.first{
+    margin-left: -20%;
+}
+#radio3:checked~.first{
+    margin-left: -40%;
+}
+#radio4:checked~.first{
+    margin-left: -60%;
+}
+#radio5:checked~.first{
+    margin-left: -80%;
+}
+.auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.auto div{
+    border:2px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.auto div:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~ .auto .auto1{
+    background: yellow;
+}
+#radio2:checked ~ .auto .auto2{
+    background: yellow;
+}
+#radio3:checked ~ .auto .auto3{
+    background: yellow;
+}
+#radio4:checked ~ .auto .auto4{
+    background: yellow;
+}
+#radio5:checked ~ .auto .auto5{
+    background: yellow;
+}
+@media screen and (max-width:600px)
+{
+   
+    .us img{
+        width: 190px;
+    }
+    .final{
+         margin-left: 1px; 
+         margin-top: 0px;
+    }
+    .us iframe{
+        width: 190px;
+        margin-left: 0px;
+    }
+    .handling:before{
+        width: 150px;
+    }
+    .handling:after{
+        width: 150px;
+    }
+    .marquee img{
+           height: 100px;
+    }
+    .line:before{
+        width: 190px;
+    }
+    .line:after{
+        width: 190px;
+    }
+    .line1:before{
+        width: 185px;
+        top: 20px;
+    }
+    .line1:after{
+        width: 185px;
+        top: 20px;
+    }
+    nav h1{
+       margin-left: 160px;
+       margin-right: 155px; 
+    }
+    nav ul{
+        margin-left: 80px;
+        margin-right: 50px;
+        padding-top: 10px;
+    }
+    nav li{
+        margin: 12px;
+    }
+    nav h2{
+        margin-right: 80px;
+        margin-top: 10px;
+    }
+    .slide img{
+        width: 600px;
+    }
+}

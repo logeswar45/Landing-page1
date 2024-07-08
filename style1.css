@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background: url(images/cv.jpeg) no-repeat fixed ;
+  background-size: 100% 100%;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+.one a{
+    text-decoration:none;
+    color: grey;
+    font-size: 16px;
+}
+.one a:hover{
+    color:white;
+}
+li,h1,ul{
+    display: inline;
+}
+ul{
+    margin-left: 57%;
+}
+li{
+    color: grey;
+    margin: 5px;
+}
+li:hover{
+    color: white;
+    cursor: pointer;
+}
+input{
+    padding: 7px;
+}
+button{
+    margin: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.forms{
+    color:white;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8pc 32px 0 rgba(0,0,0,0.37);
+}
+label{
+    width:100px;
+    display: inline-block;
+}
+select{
+    width: 187px;
+    padding: 7px;
+}
+date input{
+      width: 171px;
+}
+@media screen and (max-width:600px)
+{
+    nav h1{
+        margin-left: 190px;
+       margin-right: 148px;
+    }
+    nav ul{
+        margin-left: 135px;
+    }
+    .forms{
+        margin-left: 118px;
+        width: 300px;
+        padding-top: 10px;
+        margin-top: 80px;
+    }
+    .form{
+        margin-top: 10px;
+        width:290px ;
+    }
+}
